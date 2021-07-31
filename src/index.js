@@ -1,1 +1,2 @@
-import './sass/main.scss';
+import './css/style.css';
+import "./menu.json";
