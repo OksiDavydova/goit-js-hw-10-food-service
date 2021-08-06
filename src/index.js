@@ -1,5 +1,5 @@
-import menu from "../menu.json";
-import cardsTpl from "../templates/cards.hbs";
+import menu from "./menu.json";
+import cardsTpl from "./templates/cards.hbs";
 
 
 const menuList = document.querySelector('.js-menu');
