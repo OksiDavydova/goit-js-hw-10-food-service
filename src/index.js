@@ -19,14 +19,14 @@ const Theme = {
 const body = document.querySelector("body");
 const checkbox = document.querySelector('#theme-switch-toggle');
 
-checkbox.addEventListener('change', checkboxChangeHandler);
-
 document.body.classList.add(Theme.LIGHT);
 
 if(localStorage.getItem("theme_localStorage")) {
   document.body.classList.add(Theme.DARK)
    checkbox.checked = true;
  } 
+
+checkbox.addEventListener('change', checkboxChangeHandler);
 
 function checkboxChangeHandler(){
     if(checkbox.checked){
@@ -42,6 +42,11 @@ function addRemoveClass(add, remove) {
   document.body.classList.add(add)
   document.body.classList.remove(remove);
 }
+
+
+
+
+
 
 
 
